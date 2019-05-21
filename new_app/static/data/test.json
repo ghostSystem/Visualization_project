@@ -1,0 +1,74 @@
+var test = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.01010542757851,
+                    40.72477559078098
+                ]
+            },
+            "properties": {
+                "Borough": 1,
+                "Tax Class": 2.0,
+                "Building Class": "R1",
+                "Community Board": 101.0,
+                "Zip Code": "10013",
+                "Address": "471 WASHINGTON STREET 10013",
+                "Years": [
+                    {"2011": {"Lien": "no", 
+                           "Complaints": [
+                           {"Code": "3", "Description": "Adjacent Buildings - Not Protected"},
+                           {"Code": "9", "Description": "Debris – Excessive"},
+                           {"Code": "4B", "Description": "SEP – Professional Certification Compliance Audit"}
+                           ]}},
+                    {"2013": {"Lien": "no", 
+                           "Complaints": [
+                           {"Code": "5", "Description": "Permit – None (Building/PA/Demo etc.)"}
+                           ]}},
+                    {"2016": {"Lien": "yes", 
+                           "Complaints": []}},
+                    {"2019": {"Lien": "no", 
+                           "Complaints": [
+                           {"Code": "55", "Description": "Zoning – Non-conforming"}
+                           ]}}
+                ]
+            }
+        },
+
+        {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -73.94373685613276,
+                            40.57901984616506
+                        ]
+                    },
+                    "properties": {
+                        "Borough": 3,
+                        "Tax Class": 1.0,
+                        "Building Class": "A1",
+                        "Community Board": 101.0,
+                        "Zip Code": "11235",
+                        "Address": "157 IRWIN STREET 11235",
+                        "Years": [
+                            {"2013": {"Lien": "no", 
+                                   "Complaints": [
+                                   {"Code": "30", "Description": "Building Shaking/Vibrating/Structural Stability Affected"},
+                                   {"Code": "29", "Description": "Building – Vacant, Open and Unguarded"},
+                                   {"Code": "10", "Description": "Debris/Building -Falling or In Danger of Falling"},
+                                   {"Code": "30", "Description": "Building Shaking/Vibrating/Structural Stability Affected"}
+                                   ]}},
+                            {"2018": {"Lien": "yes", 
+                                   "Complaints": []}}
+                        ]
+                    }
+
+          }
+
+    ]
+}
+
