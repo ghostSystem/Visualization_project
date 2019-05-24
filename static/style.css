@@ -188,7 +188,7 @@ p {
     color: white;
     text-align: center;
     text-decoration: none;
-    margin-left: 700px;
+    margin-left: 800px;
 }
 
 .topnav .icon {
@@ -252,18 +252,20 @@ p {
 
 
 /*Dashboard*/
-.bar { fill: orange; }
+.bar1 { fill: LightCoral ; }
+
+.bar2 { fill:  LightSeaGreen ;}
 
 .container{
   margin: 20px auto;
   width:1600px;
-  height:300px;
+  height:400px;
   /*background-color:#fff;*/
   display:grid;
   grid-template-columns: 800px 800px;
   grid-row: auto auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
   .box{
     background-color:#333;
     padding:20px;
@@ -324,16 +326,119 @@ p {
 }
 
 #filters {
-  z-index: 0;
   margin-left: 1550px;
   margin-top: 50;
+  border-style:solid;
+  border-width: 4px;
+  border-color:#828282;
+  padding: 10px;
+  font-family: Futura;
+  font-size: 13px;
 }
 
 /*Line Graph*/
 
-.line {
+.line1 {
   fill: none;
-  stroke: steelblue;
-  stroke-width: 2px;
+  stroke: #658139;
+  stroke-width: 4px;
 }
 
+.line2 {
+  fill: none;
+  stroke: #2A7C86;
+  stroke-width: 4px;
+}
+
+.line3 {
+  fill: none;
+  stroke: #9D652F;
+  stroke-width: 4px;
+}
+
+.line4 {
+  fill: none;
+  stroke: #9D2F2F;
+  stroke-width: 4px;
+}
+
+.line5 {
+  fill: none;
+  stroke: #452F9D;
+  stroke-width: 4px;
+}
+
+
+/*Tooltip*/
+div.tooltip1 {
+  position: absolute;
+  text-align: left;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  font-family: Futura;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: #A5A4A2;
+  border: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  pointer-events: none;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+div.tooltip_d {
+  position: absolute;
+  text-align: left;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  font-family: Futura;
+  font-size: 13px;
+  line-height: 20px;
+  background-color: #A5A4A2;
+  border: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  pointer-events: none;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.legend {
+    font-size: 22px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+.tooltip .tooltext {
+  visibility: hidden;
+  width: 50px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  padding: 1px 0;
+  border-radius: 6px;
+ 
+  z-index: 1;
+
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltext {
+  visibility: visible;
+}
+
+#dob_dd {
+  max-height: 250px;
+  overflow: auto;
+}
+
+#bldg_dd {
+  max-height: 250px;
+  overflow: auto;
+}

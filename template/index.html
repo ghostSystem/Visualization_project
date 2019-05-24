@@ -12,7 +12,7 @@
 
 
 </head>
-<body onload="dashboard_func()">
+<body onload="myDashboard()">
 
 	<div class="topnav" id="myTopnav">
 
@@ -20,11 +20,11 @@
       	<a href="#" class="active1" onclick="reset_func()">RESET</a>
 		<a href="#" class="active2" onclick="plot_func()">PLOT</a>
 		<div class="dropdown">
-	    	<button id="btn" class="dropbtn">DOB 
+	    	<button id="btn" class="dropbtn">DOB Complaints 
 	      	<i class="fa fa-caret-down"></i>
 	    	</button>
-	    	<div class="dropdown-content" id="dd">
-	    		<a href="#" onclick="dob_code_func('1G')">Code: 1G</a>
+	    	<div class="dropdown-content" id="dob_dd">
+	    		<!-- <a href="#" onclick="dob_code_func('1G')">Code: 1G</a>
 	      		<a href="#" class="dropdown-item dropdown-item-checked" onclick="dob_code_func('3')">Code: 3</a>
 	      		<a href="#" onclick="dob_code_func('4B')">Code: 4B</a>
 	      		<a href="#" onclick="dob_code_func('5')">Code: 5</a>
@@ -34,22 +34,43 @@
 	      		<a href="#" onclick="dob_code_func('15')">Code: 15</a>
 	      		<a href="#" onclick="dob_code_func('29')">Code: 29</a>
 	      		<a href="#" onclick="dob_code_func('30')">Code: 30</a>
-	      		<a href="#" onclick="dob_code_func('55')">Code: 55</a>
+	      		<a href="#" onclick="dob_code_func('55')">Code: 55</a> -->
 	    	</div>
 	  	</div> 
+
 	  	<div class="dropdown">
 	    	<button id="btn" class="dropbtn">Tax Class 
 	      	<i class="fa fa-caret-down"></i>
 	    	</button>
-	    	<div class="dropdown-content" id="dd">
-	      		<a href="#" onclick="tax_class_func('1')">Class 1</a>
-	      		<a href="#" onclick="tax_class_func('2')">Class 2</a>
+	    	<div class="dropdown-content" id="tax_dd">
+	      		<!-- <a href="#" onclick="tax_class_func('1')">Class 1</a>
+	      		<a href="#" onclick="tax_class_func('2')">Class 2</a> -->
 	      		<!-- <a href="#" onclick="tax_class_both()">Class 1 & 2</a> -->
 	    	</div>
 	  	</div> 
-	  	<a href="#" onclick="lien_sales_func()">Lien Sales</a>
+
+	  	<div class="dropdown">
+	    	<button id="btn" class="dropbtn">Lien
+	      	<i class="fa fa-caret-down"></i>
+	    	</button>
+	    	<div class="dropdown-content" id="lien_dd">
+	        <div><input type="checkbox" name="lien" id="Yes" onclick="lien_func('Yes')"><label for="Yes">Yes</label></div>
+            <div><input type="checkbox" name="lien" id="No" onclick="lien_func('No')"><label for="No">No</label></div>
+	    	</div>
+	  	</div> 
+
+	  	<div class="dropdown">
+	    	<button id="btn" class="dropbtn">Building Class 
+	      	<i class="fa fa-caret-down"></i>
+	    	</button>
+	    	<div class="dropdown-content" id="bldg_dd">
+	      		
+	    	</div>
+	  	</div> 
+
+	  	<!-- <a href="#" onclick="lien_sales_func()">Lien Sales</a>
 	  	<a href="#">Build Class</a>
-	  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
 	</div>
 
 	<div id="content">
@@ -64,7 +85,7 @@
 				<i class="fas fa-times"></i>
 			</a>
 			<img src="static/data/pic1.jpg", width="170px", height="170px", class="border">
-			<a href="#">About</a>
+			<!-- <a href="#">About</a> -->
 			<a href="#" onclick="myDashboard()">Dashboard</a>
 			<a href="#" onclick="nycMapPlot()">NYC Map</a>
 			<a href="#" onclick="bronxMapPlot()">Bronx Map</a>
@@ -79,13 +100,14 @@
 	    <span id="range", style="font-weight: bold; font-size: 25px;">2011</span>
 	</div>
 	<div id="con" class="container">
-	  <div id="b1" class="box">A</div>
+	  <div id="b1" class="box"></div>
 	  <div id="b2" class="box">B</div>
 	  <div id="b3" class="box">C</div>
-	  <div id="b4" class="box">D</div>
+	  <div id="b4" class="box"></div>
 	</div>
 
-	<p id="filters"></p>
+
+	<p id="filters">Filters Selected</p>
 
 	<div id="snackbar"></div>
 
